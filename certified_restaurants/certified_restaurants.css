@@ -4,16 +4,18 @@ body {
 header {
 	margin: 0 auto;
 	width: 100%;
+	height: 15%;
 	color: white;
 	z-index: 9997;
 	position: fixed;
 	top: 0;
-	display: block;
-	border: 1px solid chocolate;	
+	display: block;	
 }
 header > .header_logo {
 	float: left;
 	width: 20%;
+	height: auto;
+	padding-top: 25px;
 	display: inline-block;
 }
 header > p {
@@ -21,12 +23,18 @@ header > p {
 	display: inline-block;
 	width: 60%;
 	color: #00B622;
+	font-size: 75px;
+	margin-top: 0;
+	padding-top: 2%;
+	padding-bottom: 25px;
+	margin-bottom: -70px;
+	background-color: white;
 }
 nav {
 	background-color: white;
 	display: inline-block;
 	float: right;
-	padding-top: 42px;
+	margin-top: 2%;
 	list-style: none;
 	text-align: center;
 	width: 20%;
@@ -39,7 +47,7 @@ nav > ul {
 	overflow: hidden;
 }
 nav > ul > li {
- 	display: inline;
+ 	display: block;
  	padding: 10px;
 }
 nav > ul > li > a {
@@ -87,13 +95,13 @@ button:active {
 	top:1px;
 }
 button.home_button {
-	padding: 6px 12.5px;
+	padding: 6px 56px;
 }
 button.certified_button {
 
 }
 button.get_involved_button {
-	padding: 6px 47px;
+	padding: 6px 45px;
 }
 button > a {
 	color: white;
@@ -119,11 +127,11 @@ a:active {
 #wrapper {
 	height: 115px;
 	margin: 0 auto;
-	width: 900px;
+	width: 60%;
 	margin-top: 0px;
 }
 section {
-	margin-top: 280px;
+	margin-top: 150px;
 }
 footer > img {
 	width: 100%;
