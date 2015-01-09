@@ -37,6 +37,7 @@ header > p {
 header div.important_save_the_food_link {
 	padding-top: 3rem;
 	color: black;
+	font-size: 20px;
 	text-align: center;
 	width: 16.5%;
 }
@@ -71,6 +72,7 @@ nav > ul > li {
 nav > ul > li > a {
 	display: inline-block;
 	padding: 10px;
+	font-size: 20px;
 }
 /* Below 900 need to media query button sizes or just move them to a new area */
 header > nav > ul > li {
@@ -114,13 +116,13 @@ header > nav > ul > li:active {
 	top:1px;
 }
 header > nav > ul > li.home_button {
-	padding: 6px 71px;
+	padding: 6px 86.5px;
 }
 header > nav > ul > li .certified_button {
 
 }
 header > nav > ul > li.get_involved_button {
-	padding: 6px 47px;
+	padding: 6px 54.5px;
 }
 header > nav > ul > li > a {
 	color: white;
