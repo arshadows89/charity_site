@@ -152,6 +152,7 @@ a:active {
 section {
 	margin-top: 150px;
 	font-size: 20px;
+	margin-bottom: 150px;
 }
 footer > img {
 	width: 100%;
@@ -166,7 +167,6 @@ footer > img {
 footer {
 	position: fixed;
 	height: 125px;
-	background-color: white;
 }
 footer > .footer_info {
 	z-index: 9999;
