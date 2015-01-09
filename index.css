@@ -146,7 +146,7 @@ a:active {
 	height: auto;
 	width: 60%;
 	margin: auto;
-	padding-top: 25px;
+	padding-top: 80px;
 }
 section {
 	margin-top: 150px;
@@ -251,5 +251,17 @@ footer {
 		text-align: center;
 		width: 100%;
 		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 1800px) and (min-width: 1400px) {
+	#wrapper {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+}
+@media only screen and (max-width: 1399px) and (min-width: 1001px) {
+	#wrapper {
+		padding-bottom: 60px;
+		padding-top: 30px;
 	}
 }
