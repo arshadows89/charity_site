@@ -4,23 +4,55 @@ body {
 header {
 	margin: 0 auto;
 	width: 100%;
+	height: 15%;
 	color: white;
 	z-index: 9997;
 	position: fixed;
 	top: 0;
-	display: block;
-	background-color: #666666;	
+	display: block;	
 }
-#wrapper {
-	height: 115px;
-	margin: 0 auto;
-	width: 900px;
-	margin-top: 0px;
+header > .header_logo {
+	float: left;
+	width: 20%;
+	height: auto;
+	padding-top: 25px;
+	display: inline-block;
+}
+header > .header_logo > img {
+	width: 85%;
+	height: auto;
+}
+header > p {
+	text-align: center;
+	display: inline-block;
+	width: 60%;
+	color: #00B622;
+	/* Min max font size needed to be added to jquery. websites dont support css min max font-size just yet. as of august (could now be supported) */
+	font-size: 7.5vw;
+	margin-top: 0;
+	padding-top: 2%;
+	padding-bottom: 25px;
+	margin-bottom: -70px;
+	background-color: white;
+}
+header div.important_save_the_food_link {
+	padding-top: 3rem;
+	color: black;
+	text-align: center;
+	width: 16.5%;
+}
+header div a:hover {
+text-decoration: underline;
 }
 nav {
-	padding-top: 42px;
+	background-color: white;
+	display: inline-block;
+	float: right;
+	margin-top: 2%;
 	list-style: none;
 	text-align: center;
+	width: 20%;
+	height: 160px;
 }
 nav > ul {
 	list-style-type: none;
@@ -29,14 +61,16 @@ nav > ul {
 	overflow: hidden;
 }
 nav > ul > li {
- 	display: inline;
+ 	display: block;
  	padding: 10px;
 }
 nav > ul > li > a {
 	display: inline-block;
 	padding: 18px;
 }
+/* Below 900 need to media query button sizes or just move them to a new area */
 button {
+	max-width: 156px;
 	-moz-box-shadow:inset 0px 1px 0px 0px #9aa2a6;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #9aa2a6;
 	box-shadow:inset 0px 1px 0px 0px #9aa2a6;
@@ -76,6 +110,15 @@ button:active {
 	position:relative;
 	top:1px;
 }
+button.home_button {
+	padding: 6px 56px;
+}
+button.certified_button {
+
+}
+button.get_involved_button {
+	padding: 6px 45px;
+}
 button > a {
 	color: white;
 }
@@ -97,14 +140,36 @@ a:hover {
 a:active {
     text-decoration: none;
 }
-
-footer {
-	margin: 0 auto;
+#wrapper {
 	height: 115px;
+	margin: 0 auto;
+	width: 60%;
+	margin-top: 0px;
+}
+section {
+	margin-top: 150px;
+	font-size: 20px;
+}
+footer > img {
 	width: 100%;
-	z-index: 9997;
+	height: auto;
+	float: left;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	display: block;
+	background-color: white;
+}
+footer {
+	position: fixed;
+	height: 125px;
+	background-color: white;
+}
+footer > .footer_info {
+	z-index: 9999;
+	margin-left: 35%;
 	position: fixed;
 	bottom: 0;
-	display: block; 
-	background-color: #666666;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
