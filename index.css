@@ -31,7 +31,6 @@ header > p {
 	font-size: 7.5vw;
 	margin-top: 0;
 	padding-top: 2%;
-	padding-bottom: 25px;
 	margin-bottom: -70px;
 	background-color: white;
 }
@@ -66,14 +65,14 @@ nav > ul {
 nav > ul > li {
  	display: block;
  	padding: 10px;
+ 	margin: 10px;
 }
 nav > ul > li > a {
 	display: inline-block;
-	padding: 18px;
+	padding: 10px;
 }
 /* Below 900 need to media query button sizes or just move them to a new area */
-button {
-	max-width: 156px;
+header > nav > ul > li {
 	-moz-box-shadow:inset 0px 1px 0px 0px #9aa2a6;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #9aa2a6;
 	box-shadow:inset 0px 1px 0px 0px #9aa2a6;
@@ -99,7 +98,7 @@ button {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #F9F8FF;
 }
-button:hover {
+header > nav > ul > li:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2a2f33), color-stop(1, #33322e));
 	background:-moz-linear-gradient(top, #2a2f33 5%, #33322e 100%);
 	background:-webkit-linear-gradient(top, #2a2f33 5%, #33322e 100%);
@@ -109,20 +108,20 @@ button:hover {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a2f33', endColorstr='#33322e',GradientType=0);
 	background-color:#2a2f33;
 }
-button:active {
+header > nav > ul > li:active {
 	position:relative;
 	top:1px;
 }
-button.home_button {
-	padding: 6px 56px;
+header > nav > ul > li.home_button {
+	padding: 6px 71px;
 }
-button.certified_button {
+header > nav > ul > li .certified_button {
 
 }
-button.get_involved_button {
-	padding: 6px 45px;
+header > nav > ul > li.get_involved_button {
+	padding: 6px 47px;
 }
-button > a {
+header > nav > ul > li > a {
 	color: white;
 }
 header > a {
@@ -144,15 +143,17 @@ a:active {
     text-decoration: none;
 }
 #wrapper {
-	height: 115px;
-	margin: 0 auto;
+	height: auto;
 	width: 60%;
-	margin-top: 0px;
+	margin: auto;
+	padding-top: 25px;
 }
 section {
 	margin-top: 150px;
 	font-size: 20px;
 	margin-bottom: 150px;
+	text-align: center;
+	height: auto;
 }
 footer > img {
 	width: 100%;
@@ -168,14 +169,7 @@ footer {
 	height: 125px;
 	background-color: white;
 }
-footer > .footer_info {
-	z-index: 9999;
-	margin-left: 35%;
-	position: fixed;
-	bottom: 0;
-	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
+
 @media only screen and (max-width: 1000px) {
 	
 	header > .header.title {
@@ -192,15 +186,17 @@ footer > .footer_info {
 		display: block;	
 	}
 	header > .header_logo {
-		float: left;
+		
 		width: 100%;
 		height: auto;
 		padding-top: 25px;
 		display: inline-block;
 	}
 	header > .header_logo > img {
-		width: 85%;
+		width: 60%;
 		height: auto;
+		margin: 0 auto;
+		display: block;
 	}
 	header > p {
 		text-align: center;
@@ -208,11 +204,52 @@ footer > .footer_info {
 		width: 100%;
 		color: #00B622;
 		/* Min max font size needed to be added to jquery. websites dont support css min max font-size just yet. as of august (could now be supported) */
-		font-size: 7.5vw;
+		font-size: 15vw;
 		margin-top: 0;
 		padding-top: 2%;
 		padding-bottom: 25px;
 		margin-bottom: -70px;
+	}
+	nav {
+		display: block;
+		margin-top: 2%;
+		list-style: none;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		padding-top: 30px;
+	}
+	nav ul {
+		padding-top: 10px;
+	}
+	nav ul li {
+		display: inline;
+	}
+	footer > img {
+		width: 100%;
+		height: auto;
+		position: static;
+		z-index: 1;
+		bottom: 0;
+		display: block;
+	}
+	footer {
+		position: static;
+		height: 125px;
 		background-color: white;
+	}
+	section {
+		font-size: 20px;
+		margin-bottom: 25px;
+		text-align: center;
+		height: auto;
+		margin-top: 0;
+	}
+	header div.important_save_the_food_link {
+		padding-top: 3rem;
+		color: black;
+		text-align: center;
+		width: 100%;
+		font-size: 20px;
 	}
 }
