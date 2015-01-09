@@ -41,6 +41,9 @@ header div.important_save_the_food_link {
 	text-align: center;
 	width: 16.5%;
 }
+header div.important_save_the_food_link > p {
+	padding: 0 10px;
+}
 header div a:hover {
 text-decoration: underline;
 }
