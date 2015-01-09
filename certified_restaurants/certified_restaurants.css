@@ -18,17 +18,31 @@ header > .header_logo {
 	padding-top: 25px;
 	display: inline-block;
 }
+header > .header_logo > img {
+	width: 85%;
+	height: auto;
+}
 header > p {
 	text-align: center;
 	display: inline-block;
 	width: 60%;
 	color: #00B622;
-	font-size: 75px;
+	/* Min max font size needed to be added to jquery. websites dont support css min max font-size just yet. as of august (could now be supported) */
+	font-size: 7.5vw;
 	margin-top: 0;
 	padding-top: 2%;
 	padding-bottom: 25px;
 	margin-bottom: -70px;
 	background-color: white;
+}
+header div.important_save_the_food_link {
+	padding-top: 3rem;
+	color: black;
+	text-align: center;
+	width: 16.5%;
+}
+header div a:hover {
+text-decoration: underline;
 }
 nav {
 	background-color: white;
@@ -54,7 +68,9 @@ nav > ul > li > a {
 	display: inline-block;
 	padding: 18px;
 }
+/* Below 900 need to media query button sizes or just move them to a new area */
 button {
+	max-width: 156px;
 	-moz-box-shadow:inset 0px 1px 0px 0px #9aa2a6;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #9aa2a6;
 	box-shadow:inset 0px 1px 0px 0px #9aa2a6;
@@ -132,6 +148,7 @@ a:active {
 }
 section {
 	margin-top: 150px;
+	font-size: 20px;
 }
 footer > img {
 	width: 100%;
