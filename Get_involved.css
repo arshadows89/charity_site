@@ -257,14 +257,14 @@ footer {
     margin-bottom: 200px;
     margin-left: 200px;
 }
-.thumbnail {
+section.thumbnail {
     float: left;
     width: 160px;
     padding: 150px;
     height: 150px;
     margin: 10px;
 }
-.public {
+section .public {
     margin: 100px;
     padding: 100px;
     height: 150px;
